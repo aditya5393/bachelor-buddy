@@ -1,0 +1,24 @@
+{
+  "name": "Bachelor Buddy",
+  "short_name": "BachelorBuddy",
+  "description": "Smart student companion, study planner, budget tracker, and lifestyle habit dashboard.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121316",
+  "theme_color": "#121316",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

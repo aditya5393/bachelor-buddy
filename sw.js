@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bachelor-buddy-v2';
+const CACHE_NAME = 'bachelor-buddy-v3';
 
 self.addEventListener('install', event => {
   self.skipWaiting();
@@ -36,3 +36,21 @@ self.addEventListener('fetch', event => {
     );
   }
 });
+
+// Notification click handler: focus or open window
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
+      for (const client of clientList) {
+        if ('focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow('/');
+      }
+    })
+  );
+});
+

@@ -6,9 +6,9 @@ Bachelor Buddy unites personal finance, college academics, and shared apartment 
 
 🌟 Key Features
 
-🏠 1. Personal Dashboard & Apple iOS 18 Widgets
+🏠 1. Personal Dashboard & Widgets
 
-Interactive iOS Widget Grid:
+Interactive  Widget Grid:
 
 1×1 & 2×1 Squircles: Frosted glass materials (backdrop-filter: blur(28px)), continuous 24px squircle curves, and top-edge specular glass reflections.
 
